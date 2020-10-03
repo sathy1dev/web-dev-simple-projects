@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body
+{
+    background-color: #654062;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 500px;
+}
+
+.text
+{
+    font-size: 60px;
+    font-weight: 900;
+    cursor: pointer;
+    color: #e8ead3;
+    font-family: 'Lobster',cursive;
+}
+
+.box
+{
+    width: 300px;
+    height: 400px;
+    background-color: #fbd46d;
+    margin: 60px auto;
+    cursor: pointer;
+    
+}
+
+ .box:hover
+{
+    animation: flipV 1s linear;
+}
+
+@keyframes flipV
+{
+    100%{
+    transform: rotateY(180deg);
+    }
+}
